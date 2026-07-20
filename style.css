@@ -103,25 +103,27 @@ border-bottom: 1px solid #292929;
 }
 
 section h2 {
-color: var(--gold);
-font-size: clamp(32px, 3.5vw, 48px);
-letter-spacing: 2px;
-margin-bottom: 25px;
+    color: var(--gold);
+    font-size: clamp(36px, 4.5vw, 52px);
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: bold;
 }
 
 section h3 {
-color: var(--light-gold);
-font-size: clamp(23px, 2.5vw, 32px);
-letter-spacing: 1px;
-margin-bottom: 15px;
+    color: var(--light-gold);
+    font-size: clamp(28px, 3vw, 36px);
+    letter-spacing: 1px;
+    margin-bottom: 18px;
 }
 
 section p {
-max-width: 850px;
-margin: 15px auto;
-color: var(--light-white);
-font-size: clamp(16px, 1.4vw, 19px);
-line-height: 1.8;
+    max-width: 900px;
+    margin: 20px auto;
+    color: var(--light-white);
+    font-size: clamp(22px, 1.8vw, 28px);
+    line-height: 1.9;
+    text-align: center;
 }
 
 .hero {
@@ -151,7 +153,17 @@ margin-bottom: 35px;
 }
 
 .hero h2 {
-font-size: clamp(34px, 4.5vw, 52px);
+    font-size: clamp(36px, 4.5vw, 52px);
+    color: var(--gold);
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 900px;
+    margin: 20px auto;
+    color: var(--light-white);
+    font-size: clamp(22px, 1.8vw, 28px);
+    line-height: 1.9;
 }
 
 img {
@@ -307,115 +319,79 @@ letter-spacing: 1px;
 
 /* Tablet and Mobile */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-
-header {
-    padding: 28px 15px 22px;
+header{
+    padding:25px 15px;
 }
 
-header h1 {
-    font-size: clamp(30px, 9vw, 42px);
-    letter-spacing: 4px;
+header h1{
+    font-size:36px;
 }
 
-header p {
-    font-size: 16px;
-    line-height: 1.6;
+nav a{
+    display:block;
+    margin:12px 0;
+    font-size:18px;
 }
 
-nav {
-    margin-top: 22px;
+section{
+    padding:60px 20px;
 }
 
-nav a {
-    display: block;
-    margin: 14px;
-    font-size: 17px;
+section h2,
+.hero h2{
+    font-size:34px;
 }
 
-section {
-    padding: 60px 20px;
+section h3{
+    font-size:26px;
 }
 
-section h2 {
-    font-size: 34px;
+section p,
+.hero p{
+    font-size:20px;
 }
 
-section h3 {
-    font-size: 25px;
+.hero{
+    min-height:500px;
 }
 
-section p {
-    font-size: 19px;
-    line-height: 1.8;
+.hero img{
+    width:100%;
 }
 
-.hero {
-    min-height: 550px;
 }
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero h2 {
-    font-size: 36px;
-}
-
-section div {
-    padding: 25px 18px;
-}
-
-form {
-    padding: 25px 20px;
-}
-
-ul,
-ol {
-    font-size: 17px;
-}
-
-
-}
-
 /* Small Mobile */
 
-@media (max-width: 480px) {
+@media (max-width:480px){
 
-
-header h1 {
-    font-size: 30px;
-    letter-spacing: 3px;
+header h1{
+    font-size:30px;
 }
 
-header p {
-    font-size: 15px;
+header p{
+    font-size:15px;
 }
 
-section h2 {
-    font-size: 30px;
+section h2,
+.hero h2{
+    font-size:30px;
 }
 
-section h3 {
-    font-size: 23px;
+section h3{
+    font-size:24px;
 }
 
-section p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.hero h2 {
-    font-size: 32px;
+section p,
+.hero p{
+    font-size:18px;
 }
 
 button,
-section a {
-    font-size: 16px;
-    padding: 12px 24px;
+section a{
+    width:100%;
+    padding:14px;
 }
-
 
 }
